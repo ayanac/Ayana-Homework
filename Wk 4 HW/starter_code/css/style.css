@@ -101,13 +101,13 @@ body {
 }
 .footertitle{
   color: #f9e42e;
+  display: block;
   font-size: 24px;
   font-weight: 600; 
   height: 50px;
-  margin:auto;
   padding-top: 40px;
   text-align:center;
-  width:30%;
+  width:100%;
 }
 h3{
   font-size: 12px;
@@ -124,9 +124,11 @@ h3{
 
 }
 .copyt{
-  text-align: center;
-}
-/******************************************
+  display:block;
+  height: 20px;
+ text-align: center;
+  width:100%;
+}/******************************************
 /* LAYOUT
 /*******************************************/
 
@@ -223,34 +225,20 @@ footer{
   width:100%;
 
 }
-.twitter{
-  float: left;
-  padding-right:45px; 
-  padding-bottom:40px;
-  text-align:center;
-
-
-}
-.fbook{
-  float: left;
-  text-align:center;
+.twitter, .fbook{
+  display: inline-block;
+  height:30px;
+  margin:20px;
+  width:25px;
   
 
 }
 .social{
-  float: left;
-  margin-left:45%;
-  margin-right: 40%;
-  padding-top:50px;
-  width:15%;
-  max-width: 100%;
+  text-align: center;
+  margin:1%;
 
 }
-.copy{
-  height: 20px;
-  margin:40px auto;
-  width:20%;
-}
+
 
 
 /******************************************
