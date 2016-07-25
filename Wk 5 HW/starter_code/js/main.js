@@ -6,20 +6,18 @@ $(document).ready(function() {
                 console.log('submit intercepted');
             });
 
-$(".readmore").click(function(){
+$(".readmore").click(function(event){
      $(".readmore").hide();
-     $("#show-this-on-click, .readless").show().slideDown('300');
-     
-});
+     $("#show-this-on-click, .readless").hide().slideDown('slow');
+});    
 
-$(".readless").click(function(){
+$(".readless").click(function(event){
     $(".readmore").show();
-    $("#show-this-on-click, .readless").hide().slideUp('300');
+    $("#show-this-on-click, .readless").show().slideUp('slow');
 });
-$(".learnmore").click(function(){
-     $("#learnmoretext").show();
+$(".learnmore").click(function(event){
      $(".learnmore").hide();
-     $("#learnmoretext").slidedown('slow');
+     $("#learnmoretext").hide().slideDown('slow');
 });
 
 });
