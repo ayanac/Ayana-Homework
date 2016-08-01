@@ -1,23 +1,36 @@
-$(document).ready(function() {
-   // WRITE OTHER CODE HERE!!
+$(document).ready(function(){
 
-  $(".button blue").submit(function(event){
-                event.preventDefault(event);
-                console.log('submit intercepted');
-            });
+var submitButton = $("#submit-btn");
 
-$(".readmore").click(function(event){
-     $(".readmore").hide();
-     $("#show-this-on-click, .readless").hide().slideDown('slow');
-});    
-
-$(".readless").click(function(event){
-    $(".readmore").show();
-    $("#show-this-on-click, .readless").show().slideUp('slow');
+submitButton.on("click", function(event){
+	//prevent form submission
+	event.preventDefault();
+	//save user input 
+	var input = $("#city-type").val();
+	console.log(input)
+	//If a user submits: "New York" or "New York City" or "NYC" 
+	if (input=="NYC" || input=="New York City" || input=="New York"){
+	//make the background of the page nyc.jpg
+	$("body").addClass('nyc');
+	}
+	// if user submits "San Francisco" or "SF" or "Bay Area"
+	else if (input==="San Francsico" || input==="SF" || input==="Bay Area"){
+	//make the background of the page sf.jpg
+	$("body").addClass('sf');
+	}
+	//If user submits "Los Angeles" or "LA" or "LAX"
+	else if (input==="Los Angeles" || input==="LA" || input==="LAX"){
+	////make the background of the page la.jpg
+	$("body").addClass('la');
+	}
+	// If user submits "Austin" or "ATX"
+	else if (input==="Austin" || input==="ATX"){
+	//make the background of the page austin.jpg	
+	$("body").addCLass('austin');
+	}
+	// If user submits "Sydney" or "SYD" 
+	else (input==="sydney" || input==="SYD"){
+	$("body").addCLass('sydney');
+	}
 });
-$(".learnmore").click(function(event){
-     $(".learnmore").hide();
-     $("#learnmoretext").hide().slideDown('slow');
-});
-
 });

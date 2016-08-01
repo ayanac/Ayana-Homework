@@ -1,0 +1,250 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* TEXT STYLES
+/*******************************************/
+
+body {
+    background-color:#f0efef;
+     color: #606161;
+     font-size: 300 24px;
+     line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo{
+  color:white;
+  font-size: 24px;
+  font-weight: 600;
+}
+.navlist{
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.articleh{
+  display:block;
+  font-size: 40px;
+  font-weight: 600;
+}
+.articletext2, .articletext1{
+  display:block;
+
+}
+.firstcharacter { 
+  float: left; 
+  font-size: 40px;
+  font-weight: 800; 
+}
+.rm{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.sidebarh{
+  color: #606161; 
+  font-size: 32px; 
+  font-weight: 800;
+}
+.catlist{
+  font-size: 24px;
+  font-weight: 300;
+}
+.about{
+  font-size: 22px;
+  font-weight: 300;
+}
+.LM{
+  font-size: 22px;
+  font-weight: 600;
+}
+.footertitle{
+  color: #f9e42e;
+  display: block;
+  font-size: 24px;
+  font-weight: 600; 
+  height: 50px;
+  padding-top: 40px;
+  text-align:center;
+  width:100%;
+}
+h3{
+  font-size: 12px;
+  color: white;
+}
+.button{
+  color:white;
+  height:35px;
+  margin:auto;
+  padding-top: 10px;
+  text-align:center;
+  width:100%;
+
+
+}
+.copyt{
+  display:block;
+  height: 20px;
+ text-align: center;
+  width:100%;
+}/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.nav{
+  background-color:#033048;
+  height:100px;
+  width:100%;
+}
+header{
+  margin-top: 60px;
+}
+.logo{
+  height: 30px;
+  margin-left: 40px;
+  padding-top: 35px;
+
+}
+.navlist li{
+  display:inline-block;
+  float:right;
+  padding: 10px;
+  padding-right: 40px;
+}
+.button:link{
+  color:white;
+}
+.button:hover{
+  color:yellow;
+}
+li:link{
+  color:yellow;
+}
+li:hover{
+  color:white;
+}
+
+.navlist {
+margin-right: 40px;
+overflow: hidden;
+width: 100%;
+}
+.main{
+background-color: ;
+height:1450px;
+padding:4%;
+overflow: auto;
+width:100%;
+
+}
+
+.column1{
+  display:block;
+  float: left;
+  margin-right: 5%;
+  min-width: 61%;
+  overflow: auto;
+  width: 61%;
+  
+}
+.art1img, .art2img{
+  max-width: 100%;
+}
+.column2{
+  display:block;
+  float: left;
+  width: 24%;
+}
+
+.side2{
+  padding-top:30px;
+}
+.ad{
+  padding-top: 30px;
+}
+.signup{
+  background-color:#f9e42e;
+  display:block;
+  padding: 20px;
+  height: 75px;
+  width:100%;
+}
+.buttonbox{
+  background-color:#033048;
+  border-radius: 5px;
+  height:35px;
+  margin:auto;
+  padding: px;
+  width:15%;
+}
+footer{
+  background-color:#121212;
+  height: 200px;
+  width:100%;
+
+}
+.twitter, .fbook{
+  display: inline-block;
+  height:30px;
+  margin:20px;
+  width:25px;
+  
+
+}
+.social{
+  text-align: center;
+  margin:1%;
+
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
